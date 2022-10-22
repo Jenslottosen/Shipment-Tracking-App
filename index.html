@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #252525;
+      letter-spacing: 4px; 
+      word-spacing: 50px;
+    }
+
+    body{
+      background: #FFEFBA;  /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    #root {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    #g-map {
+      flex: 1;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <h1>Shipment | Tracking | App</h1>
+    <div id="g-map"></div>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY6hVAmuRpE_B_vT4TzTj-34H-VXPxOKk"></script>
+  <script src="./dist/bundle.js"></script>
+</body>
+</html>
